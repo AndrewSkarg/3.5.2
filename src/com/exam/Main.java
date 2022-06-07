@@ -21,6 +21,7 @@ public class Main {
         return index;
     }
 
+
     public static void main(String[] args) {
         // write your code here
         int people = askQuestion("Enter number of people: ");
@@ -49,7 +50,8 @@ public class Main {
                     currentPerson=list.get(a==list.size()?list.get(a=0):a);
                     if(list.size()==2){
                         ind=(a+whoDelete+1)%2==0?list.getLast():list.getFirst();
-                        list.remove(ind);
+                        System.out.println(ind+" deleted");
+                        list.remove(list.indexOf(ind));
                         break;
                     }
 
