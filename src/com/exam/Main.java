@@ -30,7 +30,7 @@ public class Main {
         list.addAll(IntStream.range(0,people).boxed().collect(Collectors.toList()));
         list.forEach(x-> System.out.print(x+", "));
         System.out.println();
-        var currentPerson = list.getFirst();
+        int currentPerson = list.getFirst();
         while (list.size()!=1){
             int ind=list.indexOf(currentPerson)+whoDelete;
             ind=getIndex(ind,list.size());
