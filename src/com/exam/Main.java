@@ -48,7 +48,8 @@ public class Main {
                     a=getIndex(a,list.size());
                     currentPerson=list.get(a==list.size()?list.get(a=0):a);
                     if(list.size()==2){
-                        list.remove((a+whoDelete+1)%2==0?list.getLast():list.getFirst());
+                        ind=(a+whoDelete+1)%2==0?list.getLast():list.getFirst();
+                        list.remove(ind);
                         break;
                     }
 
